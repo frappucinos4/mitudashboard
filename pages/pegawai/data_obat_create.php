@@ -85,7 +85,7 @@
             <div class="card-body">
 
             <?php
-//mendefinisikan id obat apakah dari tombol edit atau bukan
+//mendefinisikan id obat apakah dari tombol edit atau bukan 
   //jika id diambil dari tombol edit maka
   if(isset($_GET['id'])){
     //$id=id dari tombol edit

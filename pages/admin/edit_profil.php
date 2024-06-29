@@ -119,7 +119,7 @@
                 <div class="line"></div>
                 <div class="form-group row">
                   <div class="col-sm-4 offset-sm-2">
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-info">Submit</button>
                   </div>
                 </div>
               </form>

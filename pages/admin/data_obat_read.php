@@ -11,7 +11,7 @@
 
       <!-- Breadcrumb-->
     <?php include('../_partials/top-breadcrumb.php') ?>
-            <li class="breadcrumb-item active">Data Obat</li>
+            <li class="breadcrumb-item active">Data Produk</li>
     <?php include('../_partials/bottom-breadcrumb.php') ?>
 
 
@@ -21,7 +21,7 @@
           <!-- Page Header-->
           <header>
             <h1 class="h3 display"><a href="data_obat_create.php" class="btn-tambah">Tambah</a></h1>
-            <h1 class="h3 display text-center">DATA OBAT</h1>
+            <h1 class="h3 display text-center">DATA PRODUK</h1>
           </header>
     <?php include('../_partials/data_index.php') ?>
     <table class="table table-striped table-condensed table-hover" id="tobat">

@@ -11,7 +11,7 @@
 
       <!-- Breadcrumb-->
     <?php include('../_partials/top-breadcrumb.php') ?>
-            <li class="breadcrumb-item active">Tables       </li>
+            <li class="breadcrumb-item active"> TABEL DATA KESELURUHAN      </li>
     <?php include('../_partials/bottom-breadcrumb.php') ?>
 
 
@@ -28,7 +28,7 @@
             <div class="col-lg-6">
               <div class="card">
                 <div class="card-header">
-                  <h4>Admin</h4>
+                  <h4>ADMIN</h4>
                 </div>
                 <div class="card-body">
                   <div class="table-responsive">
@@ -70,9 +70,9 @@
                       <thead>
                         <tr>
                             <th>NO.</th>
-                            <th>ID OBAT</th>
-                            <th>Nama Obat</th>
-                            <th>Jenis Obat</th>
+                            <th>ID PRODUK</th>
+                            <th>Nama Produk</th>
+                            <th>Jenis Produk</th>
                           </tr>
                       </thead>
                       <tbody>
@@ -115,6 +115,40 @@
                           <td><?php echo $nomor++ ?>.</td> <!-- No. Urut -->
                           <td><?php echo $dokter['id'] ?></td>
                           <td><?php echo $dokter['nama_lengkap'] ?></td>
+                          <td><?php echo $dokter['jenis_kelamin'] ?></td>
+                          <td><?php echo $dokter['umur'] ?></td>
+                        </tr>
+                        <?php endforeach ?> <!-- No. Urut -->
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="card">
+                <div class="card-header">
+                  <h4>Dokter</h4>
+                </div>
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table table-striped" id="tdokter">
+                      <thead>
+                        <tr>
+                            <th>NO.</th>
+                            <th>ID DOKTER</th>
+                            <th>Nama Lengkap</th>
+                            <th>Jenis Kelamin</th>
+                            <th>Umur</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                        <?php $nomor = 1; ?> <!-- No. Urut -->
+                        <?php foreach ($data_konsultasi as $konsultasi) : ?> <!-- No. Urut -->
+                        <tr>
+                          <td><?php echo $nomor++ ?>.</td> <!-- No. Urut -->
+                          <td><?php echo $konsultasi['id_konsultasi'] ?></td>
+                          <td><?php echo $konsultasi['nama_pasien'] ?></td>
                           <td><?php echo $dokter['jenis_kelamin'] ?></td>
                           <td><?php echo $dokter['umur'] ?></td>
                         </tr>

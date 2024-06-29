@@ -95,12 +95,12 @@
   if(isset($_GET['id'])){
     //$id=id dari tombol edit
     $id=$_GET['id'];
-    ?> <form class="form-horizontal" action="data_dokter_update.php" method="post">  <?php
+    ?> <form class="form-horizontal" action="data_konsultasi_update.php" method="post">  <?php
   }
   else{
       //jika tidak, maka $id=$kodeDokter;
       $id=$kodeKonsultasi;
-    ?>  <form class="form-horizontal" action="data_dokter_simpan.php" method="post"> <?php
+    ?>  <form class="form-horizontal" action="data_konsultasi_simpan.php" method="post"> <?php
   }
 ?>
               
@@ -162,18 +162,7 @@
                     <input type="text" class="form-control" name="password" value="<?php echo $password ?>">
                   </div>
                 </div>
-                <div class="line"></div>
-                <div class="form-group row">
-                  <div class="col-sm-10">
-                    <input type="hidden" class="form-control" name="level" value="<?php echo $level ?>">
-                  </div>
-                </div>
-                <div class="line"></div>
-                <div class="form-group row">
-                  <div class="col-sm-10">
-                    <input type="hidden" class="form-control" name="avatar" value="<?php echo $avatar ?>">
-                  </div>
-                </div>
+              
                 <div class="line"></div>
                 <div class="form-group row">
                   <div class="col-sm-4 offset-sm-2">

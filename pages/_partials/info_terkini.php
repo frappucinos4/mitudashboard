@@ -56,14 +56,14 @@ $jumlah_transaksi = mysqli_num_rows($data_transaksi);
               </div>
             </div>
             <!-- Count item widget-->
-            <div class="col-xl-2 col-md-4 col-6">
+            <!-- <div class="col-xl-2 col-md-4 col-6">
               <div class="wrapper count-title d-flex">
                 <div class="icon"><i class="icon-user"></i></div>
                 <div class="name"><strong class="text-uppercase">Jumlah Pegawai</strong>
                   <div class="count-number"><?php echo $jumlah_pegawai; ?></div>
                 </div>
               </div>
-            </div>
+            </div> -->
             <!-- Count item widget-->
             <div class="col-xl-2 col-md-4 col-6">
               <div class="wrapper count-title d-flex">
@@ -99,7 +99,7 @@ $jumlah_transaksi = mysqli_num_rows($data_transaksi);
         <div class="container-fluid">
           <div class="row d-flex align-items-md-stretch">
             <!-- To Do List-->
-            <div class="col-lg-3 col-md-6">
+            <!-- <div class="col-lg-3 col-md-6">
               <div class="card to-do">
                 <h2 class="display h4">Kota Domisili Pelanggan</h2>
                 <p>Berikut ini kota asal pelanggan kami.</p>
@@ -138,7 +138,7 @@ $jumlah_transaksi = mysqli_num_rows($data_transaksi);
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> -->
             <!-- Pie Chart-->
             <div class="col-lg-3 col-md-6">
               <div class="card project-progress">

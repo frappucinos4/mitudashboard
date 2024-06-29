@@ -199,21 +199,21 @@ if (!isset($_SESSION['level'])) {
                 </div>
                 <div class="line"></div>
                 <div class="form-group row">
-                  <label class="col-sm-2 form-control-label">Nama Pegawai</label>
+                  <label class="col-sm-2 form-control-label">Nama Dokter</label>
                   <div class="col-sm-10">
                     <input id="id_pegawai" type="text" class="form-control" name="id_pegawai" required="required" value="<?php echo $id_pegawai ?>">
                   </div>
                 </div>
                 <div class="line"></div>
                 <div class="form-group row">
-                  <label class="col-sm-2 form-control-label">Nama Obat</label>
+                  <label class="col-sm-2 form-control-label">Nama produk</label>
                   <div class="col-sm-10">
                     <input id="id_obat" type="text" class="form-control" name="id_obat" required="required" value="<?php echo $id_obat ?>">
                   </div>
                 </div>
                 <div class="line"></div>
                 <div class="form-group row">
-                  <label class="col-sm-2 form-control-label">Jenis Obat</label>
+                  <label class="col-sm-2 form-control-label">Jenis Produk</label>
                   <div class="col-sm-10 mb-3">   
                         <select name="jenis_obat" class="form-control" type="text">
                           <option selected><?php echo $jenis_obat ?></option>
@@ -226,7 +226,7 @@ if (!isset($_SESSION['level'])) {
                 </div>
                 <div class="line"></div>
                 <div class="form-group row">
-                  <label class="col-sm-2 form-control-label">Harga</label>
+                  <label class="col-sm-2 form-control-label">Harga Produk</label>
                   <div class="col-sm-10">
                     <input type="number" class="form-control" name="harga_satuan" value="<?php echo $harga_satuan ?>">
                   </div>

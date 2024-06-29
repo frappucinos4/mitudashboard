@@ -110,7 +110,7 @@
                     <input type="text" class="form-control" name="nama_lengkap" required="required" value="<?php echo $nama_lengkap ?>">
                   </div>
                 </div>
-                <div class="line"></div>
+                <!-- <div class="line"></div>
                 <div class="form-group row">
                   <label class="col-sm-2 form-control-label">Provinsi</label>
                   <div class="col-sm-10 mb-3">
@@ -123,7 +123,7 @@
                   <div class="col-sm-10 mb-3">
                     
                   </div>
-                </div>
+                </div> -->
                 <div class="line"></div>
                 <div class="form-group row">
                   <label class="col-sm-2 form-control-label">Email</label>
@@ -143,18 +143,6 @@
                   <label class="col-sm-2 form-control-label">Password</label>
                   <div class="col-sm-10">
                     <input type="text" class="form-control" name="password" value="<?php echo $password ?>">
-                  </div>
-                </div>
-                <div class="line"></div>
-                <div class="form-group row">
-                  <div class="col-sm-10">
-                    <input type="hidden" class="form-control" name="level" value="<?php echo $level ?>">
-                  </div>
-                </div>
-                <div class="line"></div>
-                <div class="form-group row">
-                  <div class="col-sm-10">
-                    <input type="hidden" class="form-control" name="avatar" value="<?php echo $avatar ?>">
                   </div>
                 </div>
                 <div class="line"></div>

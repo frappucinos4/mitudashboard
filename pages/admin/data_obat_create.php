@@ -13,7 +13,7 @@
   <!-- Breadcrumb-->
 <?php include('../_partials/top-breadcrumb.php') ?>
 
-        <li class="breadcrumb-item active">Data Obat</li>
+        <li class="breadcrumb-item active">Data Produk</li>
 
 <?php include('../_partials/bottom-breadcrumb.php') ?>
 
@@ -76,8 +76,8 @@
       
           <!-- Page Header-->
           <header>
-            <h1 class="h3 display"><a href="javascript:history.back()" class="btn-tambah">Back</a></h1>
-            <h1 class="h3 display">Data Obat</h1>
+            <h1 class="h3 display"><a href="javascript:history.back()" class="btn-tambah">KEMBALI</a></h1>
+            <h1 class="h3 display">Data Produk</h1>
           </header>
       <div class="row">
         <div class="col-lg-12">
@@ -127,23 +127,23 @@
                 </div>
                 <div class="line"></div>
                 <div class="form-group row">
-                  <label class="col-sm-2 form-control-label">Jenis Obat</label>
+                  <label class="col-sm-2 form-control-label">Jenis Produk</label>
                   <div class="col-sm-10 mb-3">   
                         <select name="jenis_obat" class="form-control" type="text">
                           <option selected><?php echo $jenis_obat ?></option>
-                          <option>Kapsul</option>
-                          <option>Tablet</option>
-                          <option>Sirup</option>
-                          <option>Bubuk</option>
+                          <option>Pelembab</option>
+                          <option>Sunscreen</option>
+                          <option>Serum</option>
+                          <option>Facewash</option>
                         </select>
                   </div>
                 </div>
                 <div class="form-group row">
-    <label class="col-sm-2 form-control-label">Avatar</label>
+    <label class="col-sm-2 form-control-label">Foto Produk</label>
     <div class="col-sm-10">
         <input type="file" class="form-control-file" name="avatar" accept="image/*">
         <!-- Menampilkan preview gambar -->
-        <img id="preview" src="uploads/<?php echo $avatar ?>" alt="masukan foto produk" style="max-width: 100px; margin-top: 10px;">
+        <img id="preview" src="uploads/<?php echo $avatar ?>" alt="" style="max-width: 100px; margin-top: 10px;">
     </div>
 </div>
 

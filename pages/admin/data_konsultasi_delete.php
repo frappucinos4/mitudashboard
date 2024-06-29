@@ -23,5 +23,5 @@ if(mysqli_query($db, $sql)){
 
 
 // mengalihkan halaman kembali ke .php
-header("Location: data_konsultasi_read.php");
+header("Location: data_konsultasi_create.php");
 ?>

@@ -21,7 +21,7 @@
           <!-- Page Header-->
           <header>
             <h1 class="h3 display"><a href="data_dokter_create.php" class="btn-tambah">Tambah</a></h1>
-            <h1 class="h3 display text-center">DATA DOKTER</h1>
+            <h1 class="h3 display text-center">DATA DOKTER KLINIK A</h1>
           </header>
     <?php include('../_partials/data_index.php') ?>
     <table class="table table-striped table-condensed table-hover" id="tdokter">

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # [Omeans Team](https://omeansteam.github.io/)
 Pastikan membaca perjanjian pengguna([EULA](https://github.com/omeansteam/EULA)) sebelum clone repo ini.
 
@@ -51,3 +52,6 @@ See the [LICENSE](https://github.com/omeansteam/porto_aplikasi_sistem_informasi_
 * [Expert services]()
 * [Blog]
 * [About]
+=======
+# mitudashboard
+>>>>>>> c8752a7bba712a1c2d95ff90f695612f501212fd

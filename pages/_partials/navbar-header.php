@@ -49,7 +49,7 @@
 <!-- Start kode -->
 <?php if($peg['level']=='pasien'){ //pembuka1
 ?> <!-- penutup2-->
-<div class="navbar-header"><a id="toggle-btn" href="../pasien" class="menu-btn"><i class="icon-bars"> </i></a><a href="../pasien" class="navbar-brand">
+<div class="navbar-header"><a id="toggle-btn-" href="../pasien" class="menu-btn"><i class="icon-bars"> </i></a><a href="../pasien" class="navbar-brand">
             <?php //pembuka2
             }?> <!-- penutup1-->
 <!-- End kode -->
@@ -57,7 +57,7 @@
 <!-- End kode -->
 
 
-              <div class="brand-text d-none d-md-inline-block"><strong class="text-primary">Dashboard</strong></div></a></div>
+              <div class="brand-text d-none d-md-inline-block"><strong class="text-info">MITU DASHBOARD</strong></div></a></div>
               <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
                 <!-- Log out-->
                 
