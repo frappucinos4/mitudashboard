@@ -6,12 +6,12 @@ $id = $_POST['id'];
 $nama_obat = $_POST['nama_obat'];
 $harga = $_POST['harga'];
 $stok = $_POST['stok'];
-$jenis_obat = $_POST['jenis_obat'];
+$jenis_produk = $_POST['jenis_produk'];
 
 $id_up==$_GET['id'];
 
 
-mysqli_query($db,"update obat set nama_obat='$nama_obat', harga='$harga', stok='$stok', jenis_obat='$jenis_obat' where id='$id'") or die(mysqli_error($db));
+mysqli_query($db,"update obat set nama_obat='$nama_obat', harga='$harga', stok='$stok', jenis_produk='$jenis_produk' where id='$id'") or die(mysqli_error($db));
 
 
 // UPDATE mhs, dummy SET mhs.tgllhr = dummy.tgllhr WHERE mhs.nim = dummy.nim;

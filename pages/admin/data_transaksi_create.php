@@ -217,10 +217,10 @@ if (!isset($_SESSION['level'])) {
                   <div class="col-sm-10 mb-3">   
                         <select name="jenis_obat" class="form-control" type="text">
                           <option selected><?php echo $jenis_obat ?></option>
-                          <option>Kapsul</option>
-                          <option>Tablet</option>
-                          <option>Sirup</option>
-                          <option>Bubuk</option>
+                          <option>pelembab</option>
+                          <option>Toner</option>
+                          <option>sunscreen</option>
+                          <option>facewash</option>
                         </select>
                   </div>
                 </div>

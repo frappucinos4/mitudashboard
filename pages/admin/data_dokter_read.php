@@ -20,7 +20,7 @@
         <div class="container-fluid">
           <!-- Page Header-->
           <header>
-            <h1 class="h3 display"><a href="data_dokter_create.php" class="btn-tambah">Tambah</a></h1>
+            <h1 class="h3 display"><a href="./data_dokter_create.php" class="btn-tambah">Tambah</a></h1>
             <h1 class="h3 display text-center">DATA DOKTER KLINIK A</h1>
           </header>
     <?php include('../_partials/data_index.php') ?>
@@ -32,8 +32,9 @@
       <th>Nama Lengkap</th>
       <th>Jenis Kelamin</th>
       <th>Umur</th>
-      <th>Gaji</th>
-      <th>Action</th></strong>
+      <th>uname</th>
+      <th>gaji dokter</th></strong>
+      <th>klinik</th>
     </tr>
   </thead>
   <tbody>
@@ -45,8 +46,9 @@
       <td><?php echo $dokter['nama_lengkap'] ?></td>
       <td><?php echo $dokter['jenis_kelamin'] ?></td>
       <td><?php echo $dokter['umur']," Tahun" ?></td>
+      <td><?php echo $dokter['uname']?></td>
       <td><?php echo "Rp. ",number_format($dokter['gaji_dokter']),",-" ?></td>
-      
+      <td><?php echo $dokter['klinik'] ?></td>
       <td>
           <p class="p">
             <a href="data_dokter_create.php?id=<?php echo $dokter['id'] ?>" class="btn-edit">Edit</a>

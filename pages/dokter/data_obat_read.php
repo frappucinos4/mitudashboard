@@ -28,9 +28,9 @@
   <thead>
   <tr><strong>
       <th>NO.</th>
-      <th>ID OBAT</th>
-      <th>Nama Obat</th>
-      <th>Harga</th>
+      <th>ID PRODUK</th>
+      <th>Nama Produk</th>
+      <th>Harga Produk</th>
       <th>Stok</th>
       <th>Jenis Obat</th>
       <th>Action</th></strong>

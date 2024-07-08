@@ -44,8 +44,6 @@ session_start();
     </div>
   </form>
   <p class="crcr">&copy;<script type="text/javascript">document.write(new Date().getFullYear());</script>
-          by 
-          <a href="https://arishadisopiyan.github.io/" target="_blank">Omeans</a></p>
   
         </div>
           </div>

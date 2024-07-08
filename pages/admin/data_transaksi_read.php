@@ -32,12 +32,12 @@
       <th>Tanggal</th>
       <th>Nama Pasien</th>
       <th>Nama Pegawai</th>
-      <th>Nama Obat</th>
-      <th>Jenis Obat</th>
-      <th>Harga Satuan</th>
-      <th>Jumlah Obat</th>
+      <th>Nama Produk</th>
+      <th>Jenis Jenis Produk</th>
+      <th>Harga Produk</th>
+      <th>Jumlah Poduk</th>
       <th>Total Harga</th>
-      <th>Action</th></strong>
+      <th>Edit</th></strong>
     </tr>
   </thead>
   <tbody>

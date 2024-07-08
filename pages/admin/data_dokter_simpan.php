@@ -1,6 +1,7 @@
 <?php
 include "koneksi_data.php";
 
+// menangkap data dari form
 $id = $_POST['id'];
 $nama_lengkap = $_POST['nama_lengkap'];
 $jenis_kelamin = $_POST['jenis_kelamin'];
@@ -10,61 +11,23 @@ $email = $_POST['email'];
 $uname = $_POST['uname'];
 $password = $_POST['password'];
 $level = $_POST['level'];
+$avatar = $_POST['avatar'];
+$klinik = $_POST['klinik'];
 
-// File upload handling
-$target_dir = "uploads/";
-$target_file = $target_dir . basename($_FILES["avatar"]["name"]);
-$imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
-$uploadOk = 1;
+// menginput data ke table dokter
+$query_dokter = "INSERT INTO dokter (id, nama_lengkap, jenis_kelamin, umur, gaji_dokter, email, uname, password, level, avatar, klinik) 
+                VALUES ('$id', '$nama_lengkap', '$jenis_kelamin', '$umur', '$gaji_dokter', '$email', '$uname', '$password', '$level', '$avatar', '$klinik')";
 
-// Check if image file is an actual image or fake image
-$check = getimagesize($_FILES["avatar"]["tmp_name"]);
-if ($check !== false) {
-    $uploadOk = 1;
+if (mysqli_query($conn, $query_dokter)) {
+    // Jika insert ke tabel dokter berhasil
+    // Redirect ke halaman data_dokter_read.php
+    header("Location: data_dokter_read.php");
+    exit(); // Pastikan untuk keluar dari script setelah redirect
 } else {
-    echo "File is not an image.";
-    $uploadOk = 0;
+    // Jika terjadi kesalahan saat insert
+    echo "Error: " . $query_dokter . "<br>" . mysqli_error($conn);
+    // Atau redirect kembali ke halaman sebelumnya dengan pesan error
+    header("Location: halaman_sebelumnya.php?error=query_error");
+    exit();
 }
-
-// Check if file already exists
-if (file_exists($target_file)) {
-    echo "Sorry, file already exists.";
-    $uploadOk = 0;
-}
-
-// Check file size
-if ($_FILES["avatar"]["size"] > 500000) {
-    echo "Sorry, your file is too large.";
-    $uploadOk = 0;
-}
-
-// Allow certain file formats
-if ($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" && $imageFileType != "gif") {
-    echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
-    $uploadOk = 0;
-}
-
-// Check if $uploadOk is set to 0 by an error
-if ($uploadOk == 0) {
-    echo "Sorry, your file was not uploaded.";
-} else {
-    if (move_uploaded_file($_FILES["avatar"]["tmp_name"], $target_file)) {
-        echo "The file " . htmlspecialchars(basename($_FILES["avatar"]["name"])) . " has been uploaded.";
-    } else {
-        echo "Sorry, there was an error uploading your file.";
-    }
-}
-
-// Insert data into database
-$sql = "INSERT INTO dokter (id, nama_lengkap, jenis_kelamin, umur, gaji_dokter, email, uname, password, level, avatar)
-VALUES ('$id', '$nama_lengkap', '$jenis_kelamin', '$umur', '$gaji_dokter', '$email', '$uname', '$password', '$level', '$target_file')";
-
-if ($conn->query($sql) === TRUE) {
-    echo "New record created successfully";
-} else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
-}
-
-$conn->close();
-header("location: data_dokter.php");
 ?>

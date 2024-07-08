@@ -32,7 +32,7 @@
       <th>Nama Obat</th>
       <th>Harga</th>
       <th>Stok</th>
-      <th>Jenis Obat</th>
+      <th>Jenis Produk</th>
       <th>Action</th></strong>
     </tr>
   </thead>
@@ -45,7 +45,7 @@
       <td><?php echo $obat['nama_obat'] ?></td>
       <td><?php echo $obat['harga'] ?></td>
       <td><?php echo $obat['stok'] ?></td>
-      <td><?php echo $obat['jenis_obat'] ?></td>
+      <td><?php echo $obat['jenis_produk'] ?></td>
       
       <td>
           <p class="p">

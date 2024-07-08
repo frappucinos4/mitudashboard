@@ -22,7 +22,7 @@ $peg	=mysqli_fetch_array($tampilPeg);
           <span class="text-uppercase"><?=$peg['level']?></span>
           </div>
           <!-- Small Brand information, appears on minimized sidebar-->
-          <div class="sidenav-header-logo"><a href="" class="brand-small text-center"><strong>K</strong></a></div>
+          <div class="sidenav-header-logo"><a href="" class="brand-small text-center"><strong>Mitu</strong></a></div>
         </div>
 
         <!-- Sidebar Navigation Menus-->
@@ -103,23 +103,57 @@ $peg	=mysqli_fetch_array($tampilPeg);
 <!--             
               <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>DOKTER KLINIK</a>
               <ul id="exampledropdownDropdown" class="collapse list-unstyled "> -->
-                <li><a href="../admin/data_dokter_read.php">Dokter Klinik A</a></li>
-                <li><a href="../admin/data_dokter_readb.php">Dokter Klinik B</a></li>
-                <li><a href="../admin/data_dokter_readc.php">Dokter Klinik C</a></li>
-                <ul>
-                  
+              <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Klinik A</a>
+              <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
+              <li><a href="../admin/data_dokter_read.php">Dokter</a></li>
+              <li><a href="../admin/data_pasien_read.php">Pasien</a></li>
+              <li><a href="../admin/data_obat_read.php">Produk</a></li>
+              <li><a href="../admin/data_konsultasi_read.php">Konsultasi</a></li>
+              <li><a href="../admin/data_transaksi_read.php">Transaksi</a></li>
+              
+              <li><a href="../admin/grafik_dokA.php"> <i class="fa fa-bar-chart"></i>Grafik Data</a></li>
                 </ul>
-                <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>MENU DASHBOARD</a>
+            </li>
+
+           
+                <li><a<li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Klinik B</a>
+                <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
+                <li><a href="../admin/data_dokter_read.php">Dokter</a></li>
+              <li><a href="../admin/data_pasien_read.php">Pasien</a></li>
+              <li><a href="../admin/data_obat_read.php">Produk</a></li>
+              <li><a href="../admin/data_konsultasi_read.php">Konsultasi</a></li>
+              <li><a href="../admin/data_transaksi_read.php">Transaksi</a></li>
+              
+              <li><a href="../admin/grafik_dokB.php"> <i class="fa fa-bar-chart"></i>Grafik Data</a></li>
+              </ul>
+              </li>
+
+              <li><a<li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Klinik C</a>
+                <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
+                <li><a href="../admin/data_dokter_read.php">Dokter</a></li>
+              <li><a href="../admin/data_pasien_read.php">Pasien</a></li>
+              <li><a href="../admin/data_obat_read.php">Produk</a></li>
+              <li><a href="../admin/data_konsultasi_read.php">Konsultasi</a></li>
+              <li><a href="../admin/data_transaksi_read.php">Transaksi</a></li>
+              
+              <li><a href="../admin/grafik_dokB.php"> <i class="fa fa-bar-chart"></i>Grafik Data</a></li>
+              </ul>
+              </li>
+
+                <!-- <ul>
+                  
+                </ul> -->
+                <!-- <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>MENU DASHBOARD</a>
               <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
                 <li><a href="../admin/data_pasien_read.php">Pasien</a></li>
               
                 <li><a href="../admin/data_admin_read.php">Admin</a></li>
                 <li><a href="../admin/data_pengguna_read.php">Pengguna</a></li>
-                <li><a href="../admin/data_transaksi_read.php">Transaksi</a></li>
-                <li><a href="../admin/data_konsultasi_read.php">Konsultasi</a></li>
+                
+                
                 <li><a href="../admin/data_obat_read.php">Produk</a></li>
               </ul>
-            </li>
+            </li> -->
             <?php //pembuka2
             }?> <!-- penutup1-->
 <!-- End kode -->
@@ -134,11 +168,11 @@ $peg	=mysqli_fetch_array($tampilPeg);
 
 <!-- <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>GRAFIK KLINIK</a>
 <ul id="exampledropdownDropdown" class="collapse list-unstyled "> -->
-<li><a href="../admin/grafik_dok.php"> <i class="fa fa-bar-chart"></i>Grafik Data</a></li>
-<li><a href="../admin/grafik_dok.php"> <i class="fa fa-bar-chart"></i>Grafik Klinik A</a></li>
-<li><a href="../admin/grafik_dok.php"> <i class="fa fa-bar-chart"></i>Grafik Klinik B</a></li>
-<li><a href="../admin/grafik_dok.php"> <i class="fa fa-bar-chart"></i>Grafik Klinik C</a></li>
-<li><a href="../_partials/tables.php"> <i class="icon-grid"></i>Overview</a></li>
+
+<!-- <li><a href="../admin/grafik_dokA.php"> <i class="fa fa-bar-chart"></i>Grafik Klinik A</a></li>
+<li><a href="../admin/grafik_dokB.php"> <i class="fa fa-bar-chart"></i>Grafik Klinik B</a></li>
+<li><a href="../admin/grafik_dokC.php"> <i class="fa fa-bar-chart"></i>Grafik Klinik C</a></li>
+<li><a href="../_partials/tables.php"> <i class="icon-grid"></i>Overview</a></li> -->
 
             <?php //pembuka2
             }?> <!-- penutup1-->

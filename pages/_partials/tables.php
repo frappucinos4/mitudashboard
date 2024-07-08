@@ -22,13 +22,13 @@
         <div class="container-fluid">
           <!-- Page Header-->
           <header> 
-            <h1 class="h3 display">DATA TABEL</h1>
+            <h1 class="h3 display">MITU OVERVIEW</h1>
           </header>
           <div class="row">
             <div class="col-lg-6">
               <div class="card">
                 <div class="card-header">
-                  <h4>ADMIN</h4>
+                  <h4>Data Admin</h4>
                 </div>
                 <div class="card-body">
                   <div class="table-responsive">
@@ -62,7 +62,7 @@
             <div class="col-lg-6">
               <div class="card">
                 <div class="card-header">
-                  <h4>Obat</h4>
+                  <h4>Produk</h4>
                 </div>
                 <div class="card-body">
                   <div class="table-responsive">
@@ -94,7 +94,7 @@
             <div class="col-lg-6">
               <div class="card">
                 <div class="card-header">
-                  <h4>Dokter</h4>
+                  <h4>Dokter Klinik A</h4>
                 </div>
                 <div class="card-body">
                   <div class="table-responsive">
@@ -128,7 +128,7 @@
             <div class="col-lg-6">
               <div class="card">
                 <div class="card-header">
-                  <h4>Dokter</h4>
+                  <h4>Dokter Klinik B</h4>
                 </div>
                 <div class="card-body">
                   <div class="table-responsive">
@@ -149,6 +149,40 @@
                           <td><?php echo $nomor++ ?>.</td> <!-- No. Urut -->
                           <td><?php echo $konsultasi['id_konsultasi'] ?></td>
                           <td><?php echo $konsultasi['nama_pasien'] ?></td>
+                          <td><?php echo $dokter['jenis_kelamin'] ?></td>
+                          <td><?php echo $dokter['umur'] ?></td>
+                        </tr>
+                        <?php endforeach ?> <!-- No. Urut -->
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="card">
+                <div class="card-header">
+                  <h4>Dokter Klinik C</h4>
+                </div>
+                <div class="card-body">
+                  <div class="table-responsive">
+                    <table class="table table-striped" id="tdokter">
+                      <thead>
+                        <tr>
+                            <th>NO.</th>
+                            <th>ID DOKTER</th>
+                            <th>Nama Lengkap</th>
+                            <th>Jenis Kelamin</th>
+                            <th>Umur</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                        <?php $nomor = 1; ?> <!-- No. Urut -->
+                        <?php foreach ($data_dokter as $dokter) : ?> <!-- No. Urut -->
+                        <tr>
+                          <td><?php echo $nomor++ ?>.</td> <!-- No. Urut -->
+                          <td><?php echo $dokter['id'] ?></td>
+                          <td><?php echo $dokter['nama_lengkap'] ?></td>
                           <td><?php echo $dokter['jenis_kelamin'] ?></td>
                           <td><?php echo $dokter['umur'] ?></td>
                         </tr>
@@ -196,7 +230,7 @@
             <div class="col-lg-6">
               <div class="card">
                 <div class="card-header">
-                  <h4>Compact Table</h4>
+                  <h4>PASIEN</h4>
                 </div>
                 <div class="card-body">
                   <div class="table-responsive">

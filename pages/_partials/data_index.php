@@ -50,6 +50,17 @@ while ($row = mysqli_fetch_assoc($hasil_pengguna)) {
   $data_pengguna[] = $row;
 }
 
+// index konsultasi
+// ambil dari database
+$query_konsultasi = "select * from konsultasi";
+$hasil_konsultasi = mysqli_query($db, $query_konsultasi);
+$data_konsultasi = array();
+while($row = mysqli_fetch_assoc($hasil_konsultasi)) {
+  $data_konsultasi[] = $row;
+}
+
+  
+
 
 //index obat
 // ambil dari database
@@ -85,3 +96,4 @@ $data_tagihan = array();
 while ($row = mysqli_fetch_assoc($hasil_tagihan)) {
   $data_tagihan[] = $row;
 }
+

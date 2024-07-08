@@ -2,24 +2,21 @@
 include('../../assets/config/config.php');
 
 // menangkap data dari form
-$id = $_POST['id'];
-$nama_lengkap = $_POST['nama_lengkap'];
-$jenis_kelamin = $_POST['jenis_kelamin'];
-$umur = $_POST['umur'];
-$gaji_dokter = $_POST['gaji_dokter'];
-$email = $_POST['email'];
-$uname = $_POST['uname'];
-$password = $_POST['password'];
-$level = $_POST['level'];
-$avatar = $_POST['avatar'];
+$id_konsultasi = $_POST['id_konsultasi'];
+$harga_konsultasi = $_POST['harga_konsultasi'];
+$jam_konsultasi = $_POST['jam_konsultasi'];
+$tanggal_konsultasi = $_POST['tanggal_konsultasi'];
+$id_pasien = $_POST['id_pasien'];
+$status = $_POST['status'];
+$tindakan = $_POST['tindakan'];
+
+
+
 
 $id_up==$_GET['id'];
 
 
-mysqli_query($db,"update dokter set nama_lengkap='$nama_lengkap', jenis_kelamin='$jenis_kelamin', umur='$umur', gaji_dokter='$gaji_dokter', email='$email', uname='$uname', password='$password', level='$level' where id='$id'") or die(mysqli_error($db));
-// menginput data ke table barang
-mysqli_query($db,"update pengguna set nama_lengkap='$nama_lengkap', email='$email', uname='$uname', password='$password', level='$level' where id='$id'") or die(mysqli_error($db));
-
+mysqli_query($db,"update konsultasi set id_konsultasi='$id_konsultasi', harga_konsultasi='$harga_konsultasi', jam_konsultasi ='$jam_konsultasi', tanggal_konsultasi='$tanggal_konsultasi' , id_pasien='$id_pasien', status='$status', tindakan ='$tindakan' where id='$id'") or die(mysqli_error($db));
 
 
 // UPDATE mhs, dummy SET mhs.tgllhr = dummy.tgllhr WHERE mhs.nim = dummy.nim;
@@ -27,5 +24,5 @@ mysqli_query($db,"update pengguna set nama_lengkap='$nama_lengkap', email='$emai
 
 
 // mengalihkan halaman kembali ke index.php
-header("Location: data_konsultasi_simpan.php");
+header("Location: data_konsultasi_read.php");
 ?>

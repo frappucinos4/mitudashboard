@@ -8,12 +8,7 @@ $id=$_GET['id'];
 // Attempt delete query execution
 //$sql = "DELETE FROM dokter WHERE id='$id'"; khusus satu tabel
 
-$sql = "DELETE dokter, pengguna
-FROM dokter
-JOIN pengguna
-ON dokter.id = pengguna.id
-AND dokter.id = '$id'";
-
+$sql = "DELETE from konsultasi WHERE id = '$id'";
 
 if(mysqli_query($db, $sql)){
     echo "<script>alert('Records were deleted successfully.');</script>";
@@ -23,5 +18,5 @@ if(mysqli_query($db, $sql)){
 
 
 // mengalihkan halaman kembali ke .php
-header("Location: data_konsultasi_create.php");
+header("Location: data_konsultasi_read.php");
 ?>

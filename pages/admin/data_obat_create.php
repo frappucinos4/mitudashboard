@@ -59,13 +59,13 @@
   $nama_obat="";
   $harga="";
   $stok="";
-  $jenis_obat="";
+  $jenis_produk="";
   $sql=$conn->query("select * from obat where id='".$id."'");
   while($rs=$sql->fetch_object()){
     $nama_obat=$rs->nama_obat;
     $harga=$rs->harga;
     $stok=$rs->stok;
-    $jenis_obat=$rs->jenis_obat;
+    $jenis_produk=$rs->jenis_produk;
   }
 
 ?>
@@ -129,11 +129,11 @@
                 <div class="form-group row">
                   <label class="col-sm-2 form-control-label">Jenis Produk</label>
                   <div class="col-sm-10 mb-3">   
-                        <select name="jenis_obat" class="form-control" type="text">
-                          <option selected><?php echo $jenis_obat ?></option>
+                        <select name="jenis_produk" class="form-control" type="text">
+                          <option selected><?php echo $jenis_produk ?></option>
                           <option>Pelembab</option>
                           <option>Sunscreen</option>
-                          <option>Serum</option>
+                          <option>Bedak</option>
                           <option>Facewash</option>
                         </select>
                   </div>

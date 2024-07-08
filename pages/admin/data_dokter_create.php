@@ -1,5 +1,5 @@
 
-    <?php include('../_partials/top.php') ?>
+<?php include('../_partials/top.php') ?>
 
 <!-- Side Navbar -->
 
@@ -53,6 +53,25 @@
       $id=$kodeDokter;
       
   }
+?>
+<?php
+// Enum definition
+enum Klinik: string {
+    case Klinik_A = 'Klinik A';
+    case Klinik_B = 'KlinikB';
+    case Klinik_C = 'Klinik C';
+}
+?>
+<?php
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+  $klinikValue = $_POST['klinik'];
+  
+  // Convert the posted value to an enum instance
+  $klinik = Klinik::from($klinikValue);
+
+  echo "Klinik yang dipilih: " . $klinik->name;
+}
 ?>
 
 <?php
@@ -155,17 +174,37 @@
                     <input type="text" class="form-control" name="uname" value="<?php echo $uname ?>">
                   </div>
                 </div>
-        
+                <div class="line"></div>
                 <div class="form-group row">
-    <label class="col-sm-2 form-control-label">Avatar</label>
-    <div class="col-sm-10">
-        <input type="file" class="form-control-file" name="avatar" accept="image/*">
-        <!-- Menampilkan preview gambar -->
-        <img id="preview" src="uploads/<?php echo $avatar ?>" alt="" style="max-width: 100px; margin-top: 10px;">
-    </div>
+                  <label class="col-sm-2 form-control-label">Password</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" name="password" value="<?php echo $password ?>">
+                  </div>
+                </div>
+                <div class="line"></div>
+                <div class="form-group row">
+                
+  <label class="col-sm-2 form-control-label">Klinik</label>
+  <div class="col-sm-10 mb-3">
+    <select name="klinik" class="form-control">
+      <option value="Klinik A" <?php if ($klinik == "Klinik A") echo "selected"; ?>>Klinik A</option>
+      <option value="Klinik B" <?php if ($klinik == "Klinik B") echo "selected"; ?>>Klinik B</option>
+      <option value="Klinik C" <?php if ($klinik == "Klinik C") echo "selected"; ?>>Klinik C</option>
+    </select>
+  </div>
 </div>
 
-               
+
+
+                <div class="line"></div>
+                <div class="form-group row">
+                  <div class="col-sm-10">
+                    <input type="hidden" class="form-control" name="avatar" value="<?php echo $avatar ?>">
+                  </div>
+                </div>
+                <div class="line"></div>
+                <div class="form-group row">
+                  <div class="col-sm-4 offset-sm-2">
                     <button type="submit" class="btn btn-primary">Submit</button>
                   </div>
                 </div>

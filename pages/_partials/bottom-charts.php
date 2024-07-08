@@ -10,6 +10,7 @@
     <script src="../_partials/js/charts-custom.js"></script>
     <script src="../_partials/js/diagram_data.js"></script>
     <script src="../_partials/js/Chart.js"></script>
+    <script>"../_partials/js/linechart.js"</script>
     <!-- Main File-->
     <script src="../_partials/js/front.js"></script>
   </body>

@@ -1,0 +1,5 @@
+[2024-07-08 00:53:40] Record inserted successfully
+[2024-07-08 00:55:39] Record inserted successfully
+[2024-07-08 00:59:13] Record inserted successfully
+[2024-07-08 00:59:32] Record inserted successfully
+[2024-07-08 02:28:09] Record inserted successfully
