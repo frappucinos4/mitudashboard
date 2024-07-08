@@ -1,4 +1,3 @@
-
 <?php include('../_partials/top.php') ?>
 
 <!-- Side Navbar -->
@@ -10,9 +9,7 @@
 
   <!-- Breadcrumb-->
 <?php include('../_partials/top-breadcrumb.php') ?>
-        <li class="breadcrumb-item active">Charts       </li>
-        
-
+        <li class="breadcrumb-item active">Charts</li>
 <?php include('../_partials/bottom-breadcrumb.php') ?>
 
 
@@ -26,91 +23,69 @@
         <div class="col-lg-10">
           <div class="card bar-chart-example">
             <div class="card-header d-flex align-items-center">
-              <h4>Jumlah Pengguna Berdasarkan Hak Akses</h4>
+              <h4>Jumlah Produk Terjual Berdasarkan Jenis</h4>
             </div>
             <div class="card-body">
               <div class="chart-container">
-                <canvas id="barChartPasien"></canvas>
+                <canvas id="doughnutChartProduk"></canvas>
               </div>
             </div>
           </div>
-        </div>
         </div>
       </div>
     </div>
   </section>
 
-
-
-
-
-<!--Grafik pasien-->
-<!--Grafik pasien-->
-<!--Grafik pasien-->
-<!--Grafik pasien-->
 <?php
     // Include your PHP script to fetch data
-
     // Include your database connection file
     include "koneksi_data.php";
     
     // Initialize variables
     $nama_lengkap = "";
-    $umur = null;
-    
+    $jumlah = "";
+
     // SQL query
-    $sql = "SELECT jenis_kelamin, COUNT(*) AS total FROM pasien GROUP BY jenis_kelamin";
+    $sql = "SELECT jenis_produk, COUNT(*) AS total FROM produk GROUP BY jenis_produk";
     $hasil = mysqli_query($conn, $sql);
     
     while ($data = mysqli_fetch_array($hasil)) {
-        // Fetch the gender and count from the database
-        $jk_d = $data['jenis_kelamin'];
-        $nama_lengkap .= "'$jk_d'" . ", ";
-        $jum = $data['total'];
-        $jumlah .= "$jum" . ", ";
+        // Fetch the product type and count from the database
+        $nama_obat = $data['nama_obat'];
+        $harga .= "'$harga'" . ", ";
+        $atok = $data['stok'];
+        $jenis_produk .= "$jenis_produk" . ", ";
     }
-    ?>
+?>
 
-<!--Grafik pasien-->
-<!--Grafik pasien-->
-<!--Grafik pasien-->
-<!--Grafik pasien-->
-
-
-
-
-
-
-
-        <script>
-    var ctx = document.getElementById('barChartPasien').getContext('2d');
+<script>
+    var ctx = document.getElementById('doughnutChartProduk').getContext('2d');
     var chart = new Chart(ctx, {
         // The type of chart we want to create
-        type: 'bar',
+        type: 'doughnut',
         // The data for our dataset
         data: {
-            labels: [<?php echo $data_pasien; ?>],
+            labels: [<?php echo $nama_lengkap; ?>],
             datasets: [{
-                label:'Jumlah Pasien ',
+                label: 'Jumlah Produk Terjual',
                 backgroundColor: ['yellow', '#e47909', 'rgba(56, 86, 255, 0.87)', 'rgb(255, 99, 132)'],
                 borderColor: ['rgba(56, 86, 255, 0.87)'],
                 data: [<?php echo $jumlah; ?>]
             }]
         },
-
         // Configuration options go here
         options: {
-            scales: {
-                yAxes: [{
-                    ticks: {
-                        beginAtZero:true
-                    }
-                }]
+            responsive: true,
+            legend: {
+                position: 'top',
+            },
+            animation: {
+                animateScale: true,
+                animateRotate: true
             }
         }
     });
 </script>
-
 
 </div>
 

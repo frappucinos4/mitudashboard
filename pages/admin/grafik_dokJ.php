@@ -26,7 +26,7 @@
         <div class="col-lg-10">
           <div class="card bar-chart-example">
             <div class="card-header d-flex align-items-center">
-              <h4>Jumlah Pengguna Berdasarkan Hak Akses</h4>
+              <h4>Jumlah Produk Terjual Berdasarkan Jenis</h4>
             </div>
             <div class="card-body">
               <div class="chart-container">

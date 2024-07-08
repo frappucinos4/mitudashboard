@@ -114,11 +114,11 @@ $peg	=mysqli_fetch_array($tampilPeg);
             </li>
             <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Grafik Klinik A</a>
             <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
-              <li><a href="../admin/grafik_dokA.php"> <i class="fa fa-bar-chart"></i>Grafik Data</a></li>
-              <li><a href="../admin/grafik_dokA.php"> <i class="fa fa-bar-chart"></i>Grafik Data</a></li>
-              <li><a href="../admin/grafik_dokA.php"> <i class="fa fa-bar-chart"></i>Grafik Data</a></li>
-              <li><a href="../admin/grafik_dokA.php"> <i class="fa fa-bar-chart"></i>Grafik Data</a></li>
-              <li><a href="../admin/grafik_dokA.php"> <i class="fa fa-bar-chart"></i>Grafik Data</a></li>
+              <li><a href="../admin/grafik_dokA.php"> <i class="fa fa-bar-chart"></i> Jenis Kelamin</a></li>
+              <li><a href="../admin/grafik_dokB.php"> <i class="fa fa-bar-chart"></i> Jumlah Pasien</a></li>
+              <li><a href="../admin/grafik_dokC.php"> <i class="fa fa-bar-chart"></i> Jumlah Dokter</a></li>
+              <li><a href="../admin/grafik_dokD.php"> <i class="fa fa-bar-chart"></i> Jumlah Produk Terjual</a></li>
+              
                 </ul>
             </li>
 
@@ -135,7 +135,7 @@ $peg	=mysqli_fetch_array($tampilPeg);
       
               <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Grafik Klinik B</a>
             <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
-              <li><a href="../admin/grafik_dokA.php"> <i class="fa fa-bar-chart"></i>Grafik Data</a></li>
+              <li><a href="../admin/grafik_dokB.php"> <i class="fa fa-bar-chart"></i>Grafik Pasien</a></li>
               <li><a href="../admin/grafik_dokA.php"> <i class="fa fa-bar-chart"></i>Grafik Data</a></li>
               <li><a href="../admin/grafik_dokA.php"> <i class="fa fa-bar-chart"></i>Grafik Data</a></li>
               <li><a href="../admin/grafik_dokA.php"> <i class="fa fa-bar-chart"></i>Grafik Data</a></li>
@@ -154,7 +154,7 @@ $peg	=mysqli_fetch_array($tampilPeg);
               </li> -->
               <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Grafik Klinik C</a>
               <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
-              <li><a href="../admin/grafik_dokA.php"> <i class="fa fa-bar-chart"></i>Grafik Data</a></li>
+              <li><a href="../admin/grafik_dokC.php"> <i class="fa fa-bar-chart"></i>Grafik Pasien</a></li>
               <li><a href="../admin/grafik_dokA.php"> <i class="fa fa-bar-chart"></i>Grafik Data</a></li>
               <li><a href="../admin/grafik_dokA.php"> <i class="fa fa-bar-chart"></i>Grafik Data</a></li>
               <li><a href="../admin/grafik_dokA.php"> <i class="fa fa-bar-chart"></i>Grafik Data</a></li>

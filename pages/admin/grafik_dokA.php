@@ -68,7 +68,7 @@
     }
     ?>
     
-?>
+
 
 <script>
     var ctx = document.getElementById('pasienChart').getContext('2d');

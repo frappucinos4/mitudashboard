@@ -15,3 +15,5 @@
 [2024-07-08 10:18:45] Record inserted successfully
 [2024-07-08 10:19:00] Record inserted successfully
 [2024-07-08 10:19:21] Record inserted successfully
+[2024-07-08 12:37:06] Record inserted successfully
+[2024-07-08 12:38:40] Record inserted successfully

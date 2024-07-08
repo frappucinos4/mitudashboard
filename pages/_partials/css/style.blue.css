@@ -203,7 +203,7 @@ section header {
 * ==========================================================
 */
 nav.navbar {
-  background: #393836;
+  background: #227bbc;
   padding: 0.8rem 0;
   /* Navbar Brand --------- */
   /*  Dropdowns ------------ */
@@ -222,6 +222,7 @@ nav.navbar .container-fluid {
 nav.navbar .navbar-holder {
   width: 100%;
 }
+
 
 nav.navbar a {
   font-size: 0.8rem;
