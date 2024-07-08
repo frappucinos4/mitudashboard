@@ -110,7 +110,14 @@ $peg	=mysqli_fetch_array($tampilPeg);
               <li><a href="../admin/data_obat_read.php">Produk</a></li>
               <li><a href="../admin/data_konsultasi_read.php">Konsultasi</a></li>
               <li><a href="../admin/data_transaksi_read.php">Transaksi</a></li>
-              
+              </ul>
+            </li>
+            <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Grafik Klinik A</a>
+            <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
+              <li><a href="../admin/grafik_dokA.php"> <i class="fa fa-bar-chart"></i>Grafik Data</a></li>
+              <li><a href="../admin/grafik_dokA.php"> <i class="fa fa-bar-chart"></i>Grafik Data</a></li>
+              <li><a href="../admin/grafik_dokA.php"> <i class="fa fa-bar-chart"></i>Grafik Data</a></li>
+              <li><a href="../admin/grafik_dokA.php"> <i class="fa fa-bar-chart"></i>Grafik Data</a></li>
               <li><a href="../admin/grafik_dokA.php"> <i class="fa fa-bar-chart"></i>Grafik Data</a></li>
                 </ul>
             </li>
@@ -123,20 +130,35 @@ $peg	=mysqli_fetch_array($tampilPeg);
               <li><a href="../admin/data_obat_read.php">Produk</a></li>
               <li><a href="../admin/data_konsultasi_read.php">Konsultasi</a></li>
               <li><a href="../admin/data_transaksi_read.php">Transaksi</a></li>
-              
-              <li><a href="../admin/grafik_dokB.php"> <i class="fa fa-bar-chart"></i>Grafik Data</a></li>
+              </ul>
+            </li>
+      
+              <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Grafik Klinik B</a>
+            <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
+              <li><a href="../admin/grafik_dokA.php"> <i class="fa fa-bar-chart"></i>Grafik Data</a></li>
+              <li><a href="../admin/grafik_dokA.php"> <i class="fa fa-bar-chart"></i>Grafik Data</a></li>
+              <li><a href="../admin/grafik_dokA.php"> <i class="fa fa-bar-chart"></i>Grafik Data</a></li>
+              <li><a href="../admin/grafik_dokA.php"> <i class="fa fa-bar-chart"></i>Grafik Data</a></li>
+              <li><a href="../admin/grafik_dokA.php"> <i class="fa fa-bar-chart"></i>Grafik Data</a></li>
               </ul>
               </li>
 
-              <li><a<li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Klinik C</a>
+              <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Klinik C</a>
                 <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
                 <li><a href="../admin/data_dokter_read.php">Dokter</a></li>
               <li><a href="../admin/data_pasien_read.php">Pasien</a></li>
               <li><a href="../admin/data_obat_read.php">Produk</a></li>
               <li><a href="../admin/data_konsultasi_read.php">Konsultasi</a></li>
               <li><a href="../admin/data_transaksi_read.php">Transaksi</a></li>
-              
-              <li><a href="../admin/grafik_dokB.php"> <i class="fa fa-bar-chart"></i>Grafik Data</a></li>
+              <!-- </ul>
+              </li> -->
+              <li><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Grafik Klinik C</a>
+              <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
+              <li><a href="../admin/grafik_dokA.php"> <i class="fa fa-bar-chart"></i>Grafik Data</a></li>
+              <li><a href="../admin/grafik_dokA.php"> <i class="fa fa-bar-chart"></i>Grafik Data</a></li>
+              <li><a href="../admin/grafik_dokA.php"> <i class="fa fa-bar-chart"></i>Grafik Data</a></li>
+              <li><a href="../admin/grafik_dokA.php"> <i class="fa fa-bar-chart"></i>Grafik Data</a></li>
+              <li><a href="../admin/grafik_dokA.php"> <i class="fa fa-bar-chart"></i>Grafik Data</a></li>
               </ul>
               </li>
 

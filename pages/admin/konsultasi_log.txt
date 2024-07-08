@@ -3,3 +3,15 @@
 [2024-07-08 00:59:13] Record inserted successfully
 [2024-07-08 00:59:32] Record inserted successfully
 [2024-07-08 02:28:09] Record inserted successfully
+[2024-07-08 09:42:10] Connection failed: 
+[2024-07-08 09:42:11] Connection failed: 
+[2024-07-08 09:42:12] Connection failed: 
+[2024-07-08 09:42:12] Connection failed: 
+[2024-07-08 09:42:12] Connection failed: 
+[2024-07-08 09:42:13] Connection failed: 
+[2024-07-08 09:42:13] Connection failed: 
+[2024-07-08 09:42:17] Connection failed: 
+[2024-07-08 09:57:04] Record inserted successfully
+[2024-07-08 10:18:45] Record inserted successfully
+[2024-07-08 10:19:00] Record inserted successfully
+[2024-07-08 10:19:21] Record inserted successfully
